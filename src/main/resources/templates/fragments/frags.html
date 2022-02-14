@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<header th:fragment="header">
+    <a  th:href="@{/}">
+        <img class="logo" th:src="@{/img/logo.jpeg}">
+    </a>
+
+    <nav>
+        <ul class="navBar">
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/wood/prepare-the-wood}">1.Prepare The Wood</a></li>
+            <li><a th:href="@{/wood/select-and-apply-a-wood-stain}">2.Select And Apply A Wood Stain</a></li>
+            <li><a th:href="@{/wood/add-a-clear-protective-finish}">3.Add A Clear Protective Finish</a></li>
+            <li><a th:href="@{/credits}">Credits</a></li>
+        </ul>
+    </nav>
+</header>
+
+<footer th:fragment="footer">
+    Spring Boot Assignment: Three-Step Tutorial | Luis Diego Hernandez
+</footer>
+
+</html>
